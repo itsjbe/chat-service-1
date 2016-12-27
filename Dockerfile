@@ -1,4 +1,4 @@
-FROM microsoft/dontet:runtime
+FROM microsoft/dotnet:runtime
 WORKDIR /app
 COPY /out .
 EXPOSE 5002
