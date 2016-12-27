@@ -1,5 +1,5 @@
-FROM microsoft/runtime
+FROM microsoft/dontet:runtime
 WORKDIR /app
-COPY /d .
+COPY /out .
 EXPOSE 5002
 ENTRYPOINT ["./chat-service-1"]
