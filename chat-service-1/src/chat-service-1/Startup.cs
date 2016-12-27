@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Linq;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Hosting.Server.Features;
 using Microsoft.AspNetCore.Http;
@@ -35,8 +36,10 @@ namespace chat_service_1
                         if (serverAddressesFeature != null)
                         {
                             await context.Response
-                                         .WriteAsync("<p>Listening on the following addresses: " +
-                                                     string.Join(", ", serverAddressesFeature.Addresses) +
+                                         .WriteAsync("<p>Listening on the following addresses:</p>" +
+                                                     "<ul>" +
+                                                     $"{serverAddressesFeature.Addresses.Select(s => $"<li>{s}</li>")}" +
+                                                     "</ul>" +
                                                      "</p>");
                         }
 
