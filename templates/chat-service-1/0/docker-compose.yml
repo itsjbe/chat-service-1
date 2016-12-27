@@ -1,0 +1,6 @@
+version: '2'
+services:
+  chat1:
+    image: "jbednarik/chat-service-1:0.1.0"
+    #ports:
+    #  - "5002:5002"

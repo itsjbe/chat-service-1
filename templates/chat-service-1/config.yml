@@ -1,0 +1,9 @@
+﻿---
+name: Chat Service
+description: >
+    A Net Standard Chat App.
+version: 0.1.0-dev
+category: Collaboration
+maintainer: JBe (bednarik.net@gmail.com)
+license: MIT
+projectURL: https://github.com/jbednarik1/chat-service-1
